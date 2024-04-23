@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation From</title>
-    <!-- <style>
-        .content {
-            max-width: 500px;
-            margin: auto;
-        }
-        pre{
-            display: table-row;
-        }
-        label{
-            display: table-cell;
-            text-align: left;
-        }
-        input{
-            display: table-cell;
-            text-align: left;
-        }
-        fieldset{
-            display: table;
-        }
-    </style> -->
+    <style>
+body {
+background-color: white;
+margin: 0 auto;
+width: 600px;
+border: 3px solid blue;
+padding: 10px 20px;
+box-shadow: 10px 10px 5px;
+}
+fieldset {
+margin-top: 1em;
+margin-bottom: 1em;
+padding: .5em;
+}
+legend {
+color: blue;
+font-weight: bold;
+font-size: 85%;
+margin-bottom: .5em;
+}
+    </style>
 </head>
 <body>
-    <div style="width: 500px; height: 150px" class="content">
-    <fieldset style=" border-color: blue; border-width: 5px;" name="data"></fieldset>    
     <h2>Reservation Request</h2>
     <fieldset>
         <legend>General Infromation</legend><br>
@@ -38,29 +37,17 @@
     </fieldset>    
     <fieldset>
         <legend>Proferences</legend><br>
-        <label>Room Type:</label>
-        <input type="radio">
-        <label>Business</label>
-        <input type="radio">
-        <label>Suite</label><br>
-        <label>Bed Type:</label>
-        <input type="radio">
-        <label>King</label>
-        <input type="radio">
-        <label>Double Double</label><br>
+        <pre><label>Room Type:</label>  <input type="radio"><label>Standard</label>  <input type="radio"><label>Business</label>  <input type="radio"><label>Suite</label></pre><br>
+        <pre><label>Bed Type:</label>   <input type="radio"><label>King</label>  <input type="radio"><label>Double Double</label></pre>
         <input type="checkbox">
         <label>Smoking</label>
     </fieldset>    
     <fieldset>
         <legend>Contact Information</legend><br>
-        <label>Name:</label>
-        <input type="text"><br>
-        <label>Email: </label>
-        <input type="email"><br>
-        <label>Phone:</label>
-        <input type="tel">
+        <pre><label>Name:</label>     <input type="text">        <text style="color: red; font-size: 15px;">Name is required</text></pre>
+        <pre><label>Email: </label>   <input type="email">        <text style="color: red; font-size: 15px;">Email address is invalid</text></pre>
+        <pre><label>Phone:</label>    <input type="tel">        <text style="color: red; font-size: 15px;">Phone number is invalid</text></pre>
     </fieldset>  
     <pre><button>Submit Reservation</button>      <button style="width: 150px;">Clear</button></pre>  
-    </div>
 </body>
 </html>
