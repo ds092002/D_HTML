@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation From</title>
+    <!-- <style>
+        .content {
+            max-width: 500px;
+            margin: auto;
+        }
+        pre{
+            display: table-row;
+        }
+        label{
+            display: table-cell;
+            text-align: left;
+        }
+        input{
+            display: table-cell;
+            text-align: left;
+        }
+        fieldset{
+            display: table;
+        }
+    </style> -->
+</head>
+<body>
+    <div style="width: 500px; height: 150px" class="content">
+    <fieldset style=" border-color: blue; border-width: 5px;" name="data"></fieldset>    
+    <h2>Reservation Request</h2>
+    <fieldset>
+        <legend>General Infromation</legend><br>
+    <pre><label>Arrival date:</label>    <input type="date">   <text style="color: red; font-size: 15px;">Arrival Date Is Invalid</text><br></pre>
+    <pre><label>Nights:</label>          <input type="text" style="width: 110px;">   <text style="color: red; font-size: 15px;">Nights must be a number</text><br></pre>
+    <pre><label>Adults:</label>          <input type="number" style="width: 40px;"><br></pre>
+    <pre><label>Children:</label>        <input type="number" style="width: 40px;"><br></pre>    
+    </fieldset>    
+    <fieldset>
+        <legend>Proferences</legend><br>
+        <label>Room Type:</label>
+        <input type="radio">
+        <label>Business</label>
+        <input type="radio">
+        <label>Suite</label><br>
+        <label>Bed Type:</label>
+        <input type="radio">
+        <label>King</label>
+        <input type="radio">
+        <label>Double Double</label><br>
+        <input type="checkbox">
+        <label>Smoking</label>
+    </fieldset>    
+    <fieldset>
+        <legend>Contact Information</legend><br>
+        <label>Name:</label>
+        <input type="text"><br>
+        <label>Email: </label>
+        <input type="email"><br>
+        <label>Phone:</label>
+        <input type="tel">
+    </fieldset>  
+    <pre><button>Submit Reservation</button>      <button style="width: 150px;">Clear</button></pre>  
+    </div>
+</body>
+</html>
