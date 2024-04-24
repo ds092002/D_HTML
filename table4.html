@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time Table</title>
+	<style>
+		body {
+			height: 400px;
+			border: solid black;
+			box-shadow: 10px 10px 50px;
+			background-color: whitesmoke;
+		}
+	</style>
 </head>
 <body>
-    <body>		
-		<center><h2>TIME TABLE</h2></center>
+    <body>	
+		<div>	
+		<center><h2><marquee><ins>TIME TABLE</ins></marquee></h2></center><hr>
 		<table border="1" align="center" width="60%" cellpadding="10px">
 			
-			<tr>
+			<tr style="background-color: yellow;">
 				<th>Day/Period</th>
 				<th>I <br/>9:30-10:20</th>
 				<th>II <br/>10:20-11:10</th>
@@ -21,16 +30,17 @@
 				<th>VI<br/>2:20-3:10</th>
 				<th>VII<br/>3:10-4:00</th>
 			</tr>
-			<tr>
+			<tr style="background-color: pink;">
 				<td>Monday</td>
 				<td>Eng</td>
 				<td>Mat</td>
 				<td>Che</td>
-				<td rowspan="6">LUNCH</td>
+				<td rowspan="6" style="background-color: burlywood;">LUNCH</td>
 				<td colspan="3">LAB</td>
 				<td>Phy</td>
 			</tr>
-			<tr>
+			<tr style="background-color: skyblue
+			;">
 				<td>Tuesday</td>
 				<td colspan="3">LAB</td>
 				<td>Eng</td>
@@ -38,7 +48,7 @@
 				<td>Mat</td>
 				<td>SPORTS</td>
 			</tr>		
-			<tr>
+			<tr style="background-color: chartreuse;">
 				<td>Wednesday</td>
 				<td>Mat</td>
 				<td>Phy</td>
@@ -46,7 +56,7 @@
 				<td>Che</td>
 				<td colspan="3">LIBRARY</td>
 			</tr>
-			<tr>
+			<tr style="background-color: coral;">
 				<td>Thursday</td>
 				<td>Phy</td>
 				<td>Eng</td>
@@ -54,7 +64,7 @@
 				<td colspan="3">LAB</td>
 				<td>Mat</td>				
 			</tr>
-			<tr>
+			<tr style="background-color: rgb(191, 104, 235);">
 				<td>Friday</td>
 				<td>Phy</td>
 				<td>Eng</td>
@@ -63,5 +73,6 @@
 				<td>Mat</td>				
 			</tr>
 		</table>
+	</div>
 </body>
 </html>
